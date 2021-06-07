@@ -13,8 +13,8 @@
     <div>
         <div class="div2">
             <form method="post">
-                Bilangan 1: <input type="number" name="bil1"><br>
-                Bilangan 2: <input type="number" name="bil2">
+                Bilangan 1: <input type="number" name="bil1" required><br>
+                Bilangan 2: <input type="number" name="bil2" required>
                 <br>
                 <input type="submit" value="Hitung" class="button block" >
             </form>
