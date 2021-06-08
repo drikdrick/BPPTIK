@@ -15,23 +15,23 @@
     <hr>
     <hr>
     <?php
-        if (isset($_POST['bil1']) && isset($_POST['bil2'])) {
-            echo "hasil penjumlahan adalah: " . penjumlahan($_POST['bil1'], $_POST['bil2']) . "<br>";
-            echo "hasil pengurangan adalah: " . pengurangan($_POST['bil1'], $_POST['bil2']) . "<br>";
-            echo "hasil perkalian adalah: " . perkalian($_POST['bil1'], $_POST['bil2']) . "<br>";
-            echo "hasil pembagian adalah: " . pembagian($_POST['bil1'], $_POST['bil2']) . "<br>";
+        if (isset($_POST['bil1']) && isset($_POST['bil2'])) {//cek apakah variabel sudah diset
+            echo "hasil penjumlahan adalah: " . penjumlahan($_POST['bil1'], $_POST['bil2']) . "<br>"; //memanggil fungsi penjumlahan
+            echo "hasil pengurangan adalah: " . pengurangan($_POST['bil1'], $_POST['bil2']) . "<br>"; //memanggil fungsi pengurangan
+            echo "hasil perkalian adalah: " . perkalian($_POST['bil1'], $_POST['bil2']) . "<br>"; //memanggil fungsi perkalian
+            echo "hasil pembagian adalah: " . pembagian($_POST['bil1'], $_POST['bil2']) . "<br>"; //memanggil fungsi pembagian
         }
 
-        function penjumlahan ($bil1, $bil2){
+        function penjumlahan ($bil1, $bil2){ //fungsi pertambahan
             return $bil1 + $bil2;   
         }
-        function pengurangan ($bil1, $bil2){
+        function pengurangan ($bil1, $bil2){//fungsi pengurangan
             return $bil1 - $bil2;   
         }
-        function perkalian ($bil1, $bil2){
+        function perkalian ($bil1, $bil2){//fungsi perkalian
             return $bil1 * $bil2;   
         }
-        function pembagian ($bil1, $bil2){
+        function pembagian ($bil1, $bil2){//fungsi pembagian
             return $bil1 / $bil2;   
         }
     ?>
