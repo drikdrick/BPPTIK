@@ -13,7 +13,7 @@
     <div>
         <div class="div2">
             <form method="post">
-                Bilangan 1: <input type="number" name="bil1" required><br>
+                Bilangan 1: <input type="number" name="bil1" required><br> 
                 Bilangan 2: <input type="number" name="bil2" required>
                 <br>
                 <input type="submit" value="Hitung" class="button block" >
@@ -23,7 +23,7 @@
         <div class="div3">
             <table id="myTable">
                 <?php
-                    if (isset($_POST['bil1']) && isset($_POST['bil2'])) {
+                    if (isset($_POST['bil1']) && isset($_POST['bil2'])) {//cek apakah variabel sudah diset
                         echo "<th align='left'>Operasi</th>";
                         echo "<th>Hasil</th>";
                         echo "<tr>
@@ -41,19 +41,19 @@
                             <tr>
                                 <td>Pembagian</td>
                                 <td class='text-center'>" . pembagian($_POST['bil1'], $_POST['bil2']) . "</td>
-                            </tr>";
+                            </tr>"; //memuat fungsi ke dalam table
                     }
 
-                    function penjumlahan ($bil1, $bil2){
+                    function penjumlahan ($bil1, $bil2){ //fungsi pertambahan
                         return $bil1 + $bil2;   
                     }
-                    function pengurangan ($bil1, $bil2){
+                    function pengurangan ($bil1, $bil2){ //fungsi pengurangan
                         return $bil1 - $bil2;   
                     }
-                    function perkalian ($bil1, $bil2){
+                    function perkalian ($bil1, $bil2){ //fungsi perkalian
                         return $bil1 * $bil2;   
                     }
-                    function pembagian ($bil1, $bil2){
+                    function pembagian ($bil1, $bil2){ //fungsi pembagian
                         return $bil1 / $bil2;   
                     }
                 ?>
