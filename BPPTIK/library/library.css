@@ -1,0 +1,54 @@
+body {
+ padding:5px;
+ background-color:#FFFFCC;
+ font-family:Helvetica;
+}
+input {
+	font-family:Helvetica;
+}
+
+.tombol {
+	font-weight:bold;
+	padding:10px;
+	font-family:Helvetica;
+	float:right;
+}
+.td-top {
+	vertical-align:top;
+}
+.td-space {
+	width:10px;
+}
+.td-border {
+	border-right:3px dotted #000000;
+	padding-right:20px;
+}
+.tbl th {
+
+	border:1px solid #000000;
+	text-align:center;
+	background-color:black;
+	padding:10px;
+	color: #ffffff;
+}
+.tbl td {
+	border:1px solid #000000;
+	text-align:center;
+	padding:5px;
+}
+.tbl {
+	width:100%;
+	border-collapse:collapse;
+	border:1px solid #000000;
+	text-align:center;
+}
+.tr-yel {
+	background-color:yellow;
+}
+
+#tombol{
+	background-color: yellow;
+}
+table{
+	border:2px solid #000000;
+}
